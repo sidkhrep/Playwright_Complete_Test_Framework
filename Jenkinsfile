@@ -1,6 +1,5 @@
 pipeline {
 
-```
 agent any
 
 environment {
@@ -65,3 +64,6 @@ post {
         echo 'Playwright tests failed. Check the Playwright report and test artifacts.'
     }
 }
+
+}
+
