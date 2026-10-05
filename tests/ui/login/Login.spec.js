@@ -7,5 +7,6 @@ test('user can login', async ({ page }) => {
     await loginPage.goto(config.baseURL)
     await loginPage.login(config.username, config.password)
 
+    // this is the login code
     await expect(page).toHaveURL(/inventory/)
 })
