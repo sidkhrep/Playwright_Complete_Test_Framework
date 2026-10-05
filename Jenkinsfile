@@ -2,6 +2,10 @@ pipeline {
 
 agent any
 
+triggers 
+{
+    githubPush()
+}
 environment {
     // Application configuration
     BASE_URL = 'https://www.saucedemo.com'
